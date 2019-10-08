@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
+.hero__container .hero__background_image {
+  background-image: url("../../../assets/images/Hero_Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 40vw;
+  margin-left: 20vw;
+  margin-bottom: -100vh;
+}
+
+.hero__container #hero__two_columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15vh;
+  padding: 1.2em;
+}
+
+.hero__container #hero__two_columns .hero__column_left {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 3em;
+  color: #fff;
+  letter-spacing: 0.5;
+  width: 30%;
+}
+
+.hero__container #hero__two_columns .hero__column_left p {
+  font-family: 'Abel', sans-serif;
+  font-size: 0.5em;
+  color: #fff;
+  font-weight: 600;
+  font-size: .4em;
+}
+
+.hero__container #hero__two_columns .hero__column_right {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+}
+
+.hero__container #hero__two_columns .hero__column_right p {
+  margin: 0;
+  padding: 1em;
+}
+
+.hero__container img {
+  height: 70vh;
+}
+/*# sourceMappingURL=Hero.css.map */
