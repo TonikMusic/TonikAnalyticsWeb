@@ -35,13 +35,13 @@
     justify-content: space-between;
     align-items: center;
 
-    margin-top: 15vh;
-    padding: 1.2em;
+    margin-top: 20vh;
+    padding: 6em;
 
     .hero__column_left {
-      @include primary--font($size: 3em, $color: $white, $ls: .5);
+      @include primary--font($size: 2.5em, $color: $white, $ls: .5);
 
-      width: 30%;
+      width: 40%;
 
       p {
         @include secondary--font($size: .5em, $color: $white, $weight: 600);
@@ -53,6 +53,8 @@
       @include primary--font($size: 1.5em, $color: $white, $weight: 600);
       text-align: center;
 
+      height: 50vh;
+
       p {
         margin: 0;
         padding: 1em;
@@ -62,6 +64,6 @@
 
   // Iphone Images
   img {
-    height: 70vh;
+    height: 50vh;
   }
 }

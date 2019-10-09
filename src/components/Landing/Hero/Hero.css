@@ -24,16 +24,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 15vh;
-  padding: 1.2em;
+  margin-top: 20vh;
+  padding: 6em;
 }
 
 .hero__container #hero__two_columns .hero__column_left {
   font-family: 'Fjalla One', sans-serif;
-  font-size: 3em;
+  font-size: 2.5em;
   color: #fff;
   letter-spacing: 0.5;
-  width: 30%;
+  width: 40%;
 }
 
 .hero__container #hero__two_columns .hero__column_left p {
@@ -50,6 +50,7 @@
   color: #fff;
   font-weight: 600;
   text-align: center;
+  height: 50vh;
 }
 
 .hero__container #hero__two_columns .hero__column_right p {
@@ -58,6 +59,6 @@
 }
 
 .hero__container img {
-  height: 70vh;
+  height: 50vh;
 }
 /*# sourceMappingURL=Hero.css.map */
