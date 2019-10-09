@@ -49,7 +49,7 @@
     }
 
     .hero__column_right {
-      @include primary--font($size: 1.5em, $color: $white);
+      @include primary--font($size: 1.5em, $color: $white, $weight: 600);
       text-align: center;
 
       p {

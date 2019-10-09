@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AEEA,OAAO,CAAC,gFAAI",
+    "sources": [
+        "About.scss",
+        "../../../styles/helper/_functions.scss",
+        "../../../styles/helper/_mixins.scss",
+        "../../../styles/helper/_variables.scss"
+    ],
+    "names": [],
+    "file": "About.css"
+}
