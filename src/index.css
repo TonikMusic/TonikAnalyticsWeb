@@ -9,6 +9,23 @@ body {
   background-color: #000;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #f6b1cd;
+}
+
+a:visited {
+  color: transparent;
+}
+
+a:hover {
+  color: #FFF;
+}
+
 h1 {
   margin: 0;
 }

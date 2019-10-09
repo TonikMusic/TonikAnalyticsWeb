@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 import Logo from '../../assets/logos/SingleColor.png';
 
@@ -19,7 +20,7 @@ class Navbar extends React.Component {
 
         <ul className="navbar__left">
           <li className="navbar__item">
-            About
+            <a href="#about">About</a>
           </li>
           <li className="navbar__item">
             News
@@ -31,10 +32,10 @@ class Navbar extends React.Component {
 
         <ul className="navbar__right">
           <li className="navbar__item">
-            Log In
+            <Link to="login">Log In</Link>
           </li>
           <li className="navbar__item">
-            Sign Up
+            <Link to="signup">Sign Up</Link>
           </li>
         </ul>
       </div>
