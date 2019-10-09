@@ -1,0 +1,40 @@
+@import '../../../styles/helper/functions';
+@import '../../../styles/helper/mixins';
+@import '../../../styles/helper/variables';
+
+.footer__container {
+  background-color: $primaryColor;
+
+  height: 20vh;
+  width: 100%;
+
+  #footer__two_columns {
+    @include primary--font($size: 1em, $color: $white, $weight: 600);
+
+    height: 100%;
+    width: 40%;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+
+    .footer__left_column img {
+      height: 15vh;
+      margin-bottom: -5vh;
+    }
+
+    .footer__right_column {
+      margin-top: 2vh;
+
+      img {
+        height: 15vh;
+        margin-top: -6vh;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AEEA,OAAO,CAAC,gFAAI;AFEZ,AAAA,kBAAkB,CAAC;EACjB,gBAAgB,EGLH,OAAO;EHOpB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;CA+BZ;;AAnCD,AAME,kBANgB,CAMhB,oBAAoB,CAAC;EEDrB,WAAW,EAAE,wBAAwB;EAGnC,SAAS,EFDqB,GAAG;EEKjC,KAAK,ECVD,IAAI;EDcR,WAAW,EFTiD,GAAG;EAE/D,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,GAAG;EAEV,MAAM,EAAE,MAAM;EAEd,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;EAEnB,UAAU,EAAE,MAAM;CAgBnB;;AAlCH,AAoBI,kBApBc,CAMhB,oBAAoB,CAclB,oBAAoB,CAAC,GAAG,CAAC;EACvB,MAAM,EAAE,IAAI;EACZ,aAAa,EAAE,IAAI;CACpB;;AAvBL,AAyBI,kBAzBc,CAMhB,oBAAoB,CAmBlB,qBAAqB,CAAC;EACpB,UAAU,EAAE,GAAG;CAOhB;;AAjCL,AA4BM,kBA5BY,CAMhB,oBAAoB,CAmBlB,qBAAqB,CAGnB,GAAG,CAAC;EACF,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,IAAI;CACjB",
+    "sources": [
+        "Footer.scss",
+        "../../../styles/helper/_functions.scss",
+        "../../../styles/helper/_mixins.scss",
+        "../../../styles/helper/_variables.scss"
+    ],
+    "names": [],
+    "file": "Footer.css"
+}
