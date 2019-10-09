@@ -1,0 +1,15 @@
+@import '../../styles/helper/functions';
+@import '../../styles/helper/mixins';
+@import '../../styles/helper/variables';
+
+.navbar__container {
+  @include primary--font($size: 1em, $color: $white);
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  img {
+    height: 10vh;
+  }
+}

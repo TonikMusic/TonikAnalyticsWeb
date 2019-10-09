@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
+.navbar__container {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1em;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__container img {
+  height: 10vh;
+}
+/*# sourceMappingURL=Navbar.css.map */
