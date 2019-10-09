@@ -3,11 +3,52 @@
 @import '../../styles/helper/variables';
 
 .navbar__container {
-  @include primary--font($size: 1em, $color: $white);
+  @include primary--font($size: 1.2em, $color: $white, $weight: 600);
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  text-align: center;
+
+  padding: 1.5em;
+
+  .navbar__left {
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+
+    li {
+      margin-left: 8vw;
+    }
+  }
+
+  .navbar__right {
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+
+    li:first-child {
+      margin-left: 26vw;
+    }
+
+    li:nth-child(2) {
+      margin-left: 5vw;
+      margin-right: 4vw;
+    }
+  }
+
+  li {
+    color: $secondaryColor;
+    cursor: pointer;
+
+    &:hover {
+      transition: all 0.2s;
+
+      color: $white;
+    }
+  }
 
   img {
     height: 10vh;

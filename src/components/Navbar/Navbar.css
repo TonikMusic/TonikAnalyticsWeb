@@ -1,17 +1,66 @@
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
 .navbar__container {
   font-family: 'Fjalla One', sans-serif;
-  font-size: 1em;
+  font-size: 1.2em;
   color: #fff;
+  font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  padding: 1.5em;
+}
+
+.navbar__container .navbar__left {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar__container .navbar__left li {
+  margin-left: 8vw;
+}
+
+.navbar__container .navbar__right {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar__container .navbar__right li:first-child {
+  margin-left: 26vw;
+}
+
+.navbar__container .navbar__right li:nth-child(2) {
+  margin-left: 5vw;
+  margin-right: 4vw;
+}
+
+.navbar__container li {
+  color: #f6b1cd;
+  cursor: pointer;
+}
+
+.navbar__container li:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #fff;
 }
 
 .navbar__container img {

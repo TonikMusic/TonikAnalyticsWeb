@@ -13,11 +13,14 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className="navbar__container">
-        <div>
+        <div className="navbar__logo">
           <img src={Logo} alt="#" />
         </div>
 
-        <ul>
+        <ul className="navbar__left">
+          <li className="navbar__item">
+            About
+          </li>
           <li className="navbar__item">
             News
           </li>
@@ -26,7 +29,7 @@ class Navbar extends React.Component {
           </li>
         </ul>
 
-        <ul>
+        <ul className="navbar__right">
           <li className="navbar__item">
             Log In
           </li>
