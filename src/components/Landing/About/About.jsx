@@ -5,7 +5,7 @@ import AboutImg from '../../../assets/images/About_Image.jpg';
 
 function About() {
   return (
-    <div className="about__container">
+    <div className="about__container" id="about">
       <h1>What We Do</h1>
       <div id="about__two_columns">
         <div className="about__column_left">
