@@ -1,0 +1,9 @@
+@import '../../../styles/helper/functions';
+@import '../../../styles/helper/mixins';
+@import '../../../styles/helper/variables';
+
+.login__container {
+  height: 80vh;
+
+  color: $white;
+}
