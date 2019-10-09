@@ -4,18 +4,12 @@
   text-align: center;
 }
 
-.signup__container img {
-  height: 15vh;
-}
-
 .signup__container form {
   border-radius: .2em .2em .2em .2em;
-  -webkit-box-shadow: 20px 20px 0px 0px #9c9c9c;
-          box-shadow: 20px 20px 0px 0px #9c9c9c;
   background-color: #fff;
   margin: 0 auto;
   width: 40%;
-  padding: 1em;
+  padding: 1.8em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,6 +17,27 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.signup__container form p {
+  font-family: 'Abel', sans-serif;
+  font-size: 1.2em;
+}
+
+.signup__container form p a {
+  color: #f6b1cd;
+}
+
+.signup__container form p a:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #940ea1;
+}
+
+.signup__container form p span {
+  font-family: 'Abel', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .signup__container form h1 {
@@ -38,10 +53,39 @@
   color: #9c9c9c;
   height: 2.5em;
   margin-bottom: 2vh;
-  padding: .25em;
+  padding: .4em;
   border: solid 0.1em #9c9c9c;
   border-radius: .3em .3em .3em .3em;
   -webkit-box-shadow: 3px 6px 0px 1px #9c9c9c;
           box-shadow: 3px 6px 0px 1px #9c9c9c;
+}
+
+.signup__container form button {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.1em;
+  color: #fff;
+  cursor: pointer;
+  padding: .5em;
+  border: transparent;
+  border-radius: 2em 2em 2em 2em;
+  -webkit-box-shadow: 0px 6px 0px 0px #940ea1;
+          box-shadow: 0px 6px 0px 0px #940ea1;
+  background-color: #f6b1cd;
+}
+
+.signup__container form button:hover {
+  -webkit-transition: 0.6s all;
+  transition: 0.6s all;
+  background-color: #940ea1;
+  -webkit-box-shadow: 0px 6px 0px 0px #f6b1cd;
+          box-shadow: 0px 6px 0px 0px #f6b1cd;
+}
+
+.signup__container form button:active {
+  -webkit-transition: 0.15s all;
+  transition: 0.15s all;
+  top: 5%;
+  -webkit-box-shadow: 0px 6px 0px 0px #940ea1;
+          box-shadow: 0px 6px 0px 0px #940ea1;
 }
 /*# sourceMappingURL=Signup.css.map */

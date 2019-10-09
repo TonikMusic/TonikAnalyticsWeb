@@ -7,23 +7,38 @@
 
   text-align: center;
 
-  img {
-    height: 15vh;
-  }
-
   form {
     border-radius: .2em .2em .2em .2em;
-    box-shadow: 20px 20px 0px 0px $grey;
-
+    // box-shadow: 20px 20px 0px 0px $grey;
     background-color: $white;
 
     margin: 0 auto;
     width: 40%;
 
-    padding: 1em;
+    padding: 1.8em;
 
     display: flex;
     flex-direction: column;
+
+    p {
+      @include secondary--font($size:1.2em);
+
+      a {
+        color: $secondaryColor;
+
+        &:hover {
+          transition: all 0.2s;
+
+          color: $primaryColor;
+        }
+      }
+
+      span {
+        @include secondary--font($size:1.2em, $weight: bold);
+      }
+    }
+
+
 
     h1 {
       @include primary--font($size: 2em, $color: $black);
@@ -35,11 +50,37 @@
 
       height: 2.5em;
       margin-bottom: 2vh;
-      padding: .25em;
+      padding: .4em;
 
       border: solid .1em $grey;
       border-radius: .3em .3em .3em .3em;
       box-shadow: 3px 6px 0px 1px $grey;
+    }
+
+    button {
+      @include primary--font($size: 1.1em, $color: $white);
+      cursor: pointer;
+
+      padding: .5em;
+
+      border: transparent;
+      border-radius: 2em 2em 2em 2em;
+      box-shadow: 0px 6px 0px 0px $primaryColor;
+      background-color: $secondaryColor;
+
+      &:hover {
+        transition: 0.6s all;
+
+        background-color: $primaryColor;
+        box-shadow: 0px 6px 0px 0px $secondaryColor;
+      }
+
+      &:active {
+        transition: 0.15s all;
+
+        top: 5%;
+        box-shadow: 0px 6px 0px 0px $primaryColor;
+      }
     }
   }
 }
