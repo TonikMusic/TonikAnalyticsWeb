@@ -5,7 +5,7 @@
   color: #fff;
   font-weight: 900;
   padding: 3em;
-  min-width: 80vh;
+  min-width: 60vh;
 }
 
 .about__container #about__two_columns {
@@ -19,7 +19,8 @@
 
 .about__container #about__two_columns .about__column_left {
   font-family: 'Abel', sans-serif;
-  font-size: 1em;
+  font-size: 0.8em;
+  font-weight: italic;
   width: 50%;
 }
 

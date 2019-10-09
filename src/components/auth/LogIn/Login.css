@@ -1,2 +1,95 @@
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
+.login__container {
+  height: 80vh;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.login__container form {
+  border-radius: .2em .2em .2em .2em;
+  -webkit-box-shadow: 20px 20px 0px 0px #9c9c9c;
+          box-shadow: 20px 20px 0px 0px #9c9c9c;
+  background-color: #fff;
+  margin-top: -50%;
+  margin: 0 auto;
+  width: 40%;
+  padding: 1.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login__container form p {
+  font-family: 'Abel', sans-serif;
+  font-size: 1.2em;
+}
+
+.login__container form p a {
+  color: #f6b1cd;
+}
+
+.login__container form p a:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #940ea1;
+}
+
+.login__container form p span {
+  font-family: 'Abel', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.login__container form h1 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2em;
+  color: #000;
+  padding: 1em;
+}
+
+.login__container form input {
+  font-family: 'Abel', sans-serif;
+  font-size: 1em;
+  color: #000;
+  height: 2.5em;
+  margin-bottom: 2vh;
+  padding: .4em;
+  border: solid 0.1em #9c9c9c;
+  border-radius: .3em .3em .3em .3em;
+  -webkit-box-shadow: 3px 6px 0px 1px #9c9c9c;
+          box-shadow: 3px 6px 0px 1px #9c9c9c;
+}
+
+.login__container form button {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.1em;
+  color: #fff;
+  cursor: pointer;
+  padding: .5em;
+  border: transparent;
+  border-radius: 2em 2em 2em 2em;
+  -webkit-box-shadow: 0px 6px 0px 0px #940ea1;
+          box-shadow: 0px 6px 0px 0px #940ea1;
+  background-color: #f6b1cd;
+}
+
+.login__container form button:hover {
+  -webkit-transition: 0.6s all;
+  transition: 0.6s all;
+  background-color: #940ea1;
+  -webkit-box-shadow: 0px 6px 0px 0px #f6b1cd;
+          box-shadow: 0px 6px 0px 0px #f6b1cd;
+}
+
+.login__container form button:active {
+  -webkit-transition: 0.15s all;
+  transition: 0.15s all;
+  top: 5%;
+  -webkit-box-shadow: 0px 6px 0px 0px #940ea1;
+          box-shadow: 0px 6px 0px 0px #940ea1;
+}
 /*# sourceMappingURL=Login.css.map */

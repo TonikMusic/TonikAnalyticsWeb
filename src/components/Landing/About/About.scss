@@ -7,14 +7,14 @@
 
   padding: 3em;
 
-  min-width: 80vh;
+  min-width: 60vh;
 
   #about__two_columns {
     display: flex;
     justify-content: space-between;
 
     .about__column_left {
-      @include secondary--font($size: 1em);
+      @include secondary--font($size: .8em, $weight: italic);
 
       width: 50%;
 
