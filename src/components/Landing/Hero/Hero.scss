@@ -1,0 +1,66 @@
+@import '../../../styles/helper/functions';
+@import '../../../styles/helper/mixins';
+@import '../../../styles/helper/variables';
+
+
+.hero__container {
+  // background-image: url('../../../assets/images/Hero_Background.jpg');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+
+  // min-height: 100vh;
+  // width: 40vw;
+
+  // margin-left: 20vw;
+
+
+
+  .hero__background_image {
+    background-image: url('../../../assets/images/Hero_Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 100vh;
+    width: 40vw;
+
+    margin-left: 20vw;
+    margin-bottom: -100vh;
+  }
+
+
+  #hero__two_columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 15vh;
+    padding: 1.2em;
+
+    .hero__column_left {
+      @include primary--font($size: 3em, $color: $white, $ls: .5);
+
+      width: 30%;
+
+      p {
+        @include secondary--font($size: .5em, $color: $white, $weight: 600);
+        font-size: .4em;
+      }
+    }
+
+    .hero__column_right {
+      @include primary--font($size: 1.5em, $color: $white, $weight: 600);
+      text-align: center;
+
+      p {
+        margin: 0;
+        padding: 1em;
+      }
+    }
+  }
+
+  // Iphone Images
+  img {
+    height: 70vh;
+  }
+}

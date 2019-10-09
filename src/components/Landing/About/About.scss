@@ -1,0 +1,43 @@
+@import '../../../styles/helper/functions';
+@import '../../../styles/helper/mixins';
+@import '../../../styles/helper/variables';
+
+.about__container {
+  @include primary--font($size: 2em, $color: $white, $weight: 900);
+
+  padding: 3em;
+
+  min-width: 80vh;
+
+  #about__two_columns {
+    display: flex;
+    justify-content: space-between;
+
+    .about__column_left {
+      @include secondary--font($size: 1em);
+
+      width: 50%;
+
+      span {
+        @include primary--font($size: 1em, $color: $secondaryColor, $weight: 800);
+
+        &:hover {
+          transition: all 0.2s;
+
+          color: $primaryColor;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .about__column_right {
+      margin-right: -6.7vw;
+
+      img {
+        height: 50vh;
+
+        border-radius: 10px 0 0 10px;
+      }
+    }
+  }
+}

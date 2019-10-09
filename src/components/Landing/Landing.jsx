@@ -1,10 +1,16 @@
 import React from 'react';
 import './Landing.css';
 
+import Hero from './Hero/Hero';
+import About from './About/About';
+import Footer from './Footer/Footer';
+
 function Landing() {
   return (
     <div>
-      <h1>Landing Works</h1>
+      <Hero />
+      <About />
+      <Footer />
     </div>
   );
 }

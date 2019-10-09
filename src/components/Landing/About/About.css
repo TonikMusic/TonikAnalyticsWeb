@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
+.about__container {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2em;
+  color: #fff;
+  font-weight: 900;
+  padding: 3em;
+  min-width: 80vh;
+}
+
+.about__container #about__two_columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__container #about__two_columns .about__column_left {
+  font-family: 'Abel', sans-serif;
+  font-size: 1em;
+  width: 50%;
+}
+
+.about__container #about__two_columns .about__column_left span {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1em;
+  color: #f6b1cd;
+  font-weight: 800;
+}
+
+.about__container #about__two_columns .about__column_left span:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #940ea1;
+  cursor: pointer;
+}
+
+.about__container #about__two_columns .about__column_right {
+  margin-right: -6.7vw;
+}
+
+.about__container #about__two_columns .about__column_right img {
+  height: 50vh;
+  border-radius: 10px 0 0 10px;
+}
+/*# sourceMappingURL=About.css.map */
