@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AEEA,OAAO,CAAC,gFAAI;AFEZ,AAAA,iBAAiB,CAAC;EAChB,MAAM,EAAE,IAAI;EAEZ,KAAK,EGDC,IAAI;CHEX",
+    "mappings": "AEEA,OAAO,CAAC,gFAAI",
     "sources": [
         "Login.scss",
         "../../../styles/helper/_functions.scss",

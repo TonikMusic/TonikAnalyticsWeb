@@ -5,5 +5,41 @@
 .signup__container {
   height: 80vh;
 
-  color: $white;
+  text-align: center;
+
+  img {
+    height: 15vh;
+  }
+
+  form {
+    border-radius: .2em .2em .2em .2em;
+    box-shadow: 20px 20px 0px 0px $grey;
+
+    background-color: $white;
+
+    margin: 0 auto;
+    width: 40%;
+
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      @include primary--font($size: 2em, $color: $black);
+      padding: 1em;
+    }
+
+    input {
+      @include secondary--font($size: 1em, $color: $grey);
+
+      height: 2.5em;
+      margin-bottom: 2vh;
+      padding: .25em;
+
+      border: solid .1em $grey;
+      border-radius: .3em .3em .3em .3em;
+      box-shadow: 3px 6px 0px 1px $grey;
+    }
+  }
 }
