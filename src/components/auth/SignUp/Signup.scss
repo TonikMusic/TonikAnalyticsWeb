@@ -46,7 +46,7 @@
     }
 
     input {
-      @include secondary--font($size: 1em, $color: $grey);
+      @include secondary--font($size: 1em, $color: $black);
 
       height: 2.5em;
       margin-bottom: 2vh;
