@@ -3,6 +3,7 @@ import authService from '../services/auth.service';
 import alertActions from './alert.actions';
 import history from '../helpers/history';
 
+// LOGIN ACTION
 function login(email, password) {
   return (dispatch) => {
     dispatch(request({
@@ -44,7 +45,17 @@ function login(email, password) {
   }
 }
 
+// LOGOUT SERVICE
+function logout() {
+  authService.logout();
+  return {
+    type: authConstants.LOGOUT,
+  };
+}
+
+
 // eslint-disable-next-line no-undef
 export default userActions = {
   login,
+  logout,
 };
