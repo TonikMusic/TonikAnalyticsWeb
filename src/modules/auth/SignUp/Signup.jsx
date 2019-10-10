@@ -36,7 +36,7 @@ class Signup extends React.Component {
     this.Auth.signup(fullName, username, dateOfBirth, email, password)
       .then((res) => {
         if (this.Auth.loggedIn()) {
-          window.location = '/user/dashboard';
+          window.location = '/';
         }
       });
   }
@@ -48,7 +48,7 @@ class Signup extends React.Component {
 
     return (
       <div className="signup__container">
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <h1>Sign Up</h1>
 
           <input
