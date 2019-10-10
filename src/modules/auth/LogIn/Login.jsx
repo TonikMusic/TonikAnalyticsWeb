@@ -31,7 +31,7 @@ class Login extends React.Component {
 
     // eslint-disable-next-line no-bitwise
     if (email === 'JimmyC@gmail.com' & password === 'Jimmypass') {
-      localStorage.setItem('tonik_token', token);
+      localStorage.setItem('nl_token', token);
       window.location = '/';
     } else {
       alert('Incorrect Username/Password');

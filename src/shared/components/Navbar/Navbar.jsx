@@ -4,14 +4,50 @@ import { Link } from 'react-router-dom';
 
 import Logo from '../../../assets/logos/SingleColor.png';
 
+import FakeAuth from '../../../services/fakeAuth';
+
 class Navbar extends React.Component {
   constructor() {
     super();
 
-    this.state = {};
+    this.state = {
+      loggedIn: true,
+    };
+
+    this.Auth = new FakeAuth();
   }
 
-  render() {
+  componentDidMount() {
+    this.setState({ loggedIn: this.Auth.loggedIn() });
+  }
+
+  checkAuth() {
+    const { loggedIn } = this.state;
+    if (loggedIn === true) {
+      return (
+        <div className="navbar__container">
+          <div className="navbar__logo">
+            <Link to="/"><img src={Logo} alt="#" /></Link>
+          </div>
+
+          <ul className="navbar__left">
+            <li className="navbar__item">
+              <a href="#about">Home</a>
+            </li>
+            <li className="navbar__item">
+              Social
+            </li>
+            <li className="navbar__item">
+              Music
+            </li>
+          </ul>
+
+          <ul className="navbar__right">
+            <li className="navbar__item">Profile</li>
+          </ul>
+        </div>
+      );
+    }
     return (
       <div className="navbar__container">
         <div className="navbar__logo">
@@ -38,6 +74,14 @@ class Navbar extends React.Component {
             <Link to="signup">Sign Up</Link>
           </li>
         </ul>
+      </div>
+    );
+  }
+
+  render() {
+    return (
+      <div>
+        {this.checkAuth()}
       </div>
     );
   }
