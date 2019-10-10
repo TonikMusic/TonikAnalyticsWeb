@@ -2,6 +2,8 @@ import React from 'react';
 import './Signup.css';
 import { Link } from 'react-router-dom';
 
+import FakeAuth from '../../../services/fakeAuth';
+
 class Signup extends React.Component {
   constructor() {
     super();
@@ -13,6 +15,7 @@ class Signup extends React.Component {
       email: '',
       password: '',
     };
+    this.Auth = new FakeAuth();
   }
 
   handleChange = (e) => {
@@ -25,6 +28,17 @@ class Signup extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+
+    const {
+      fullName, username, dateOfBirth, email, password,
+    } = this.state;
+
+    this.Auth.signup(fullName, username, dateOfBirth, email, password)
+      .then((res) => {
+        if (this.Auth.loggedIn()) {
+          window.location = '/user/dashboard';
+        }
+      });
   }
 
   render() {
@@ -79,7 +93,7 @@ class Signup extends React.Component {
             </span>
           </p>
 
-          <button type="submit">Get Started</button>
+          <button type="submit" value="submit">Get Started</button>
         </form>
       </div>
     );

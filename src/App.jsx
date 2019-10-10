@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Navbar from './components/Navbar/Navbar';
-import Landing from './components/Landing/Landing';
-import Signup from './components/auth/SignUp/Signup';
-import Login from './components/auth/LogIn/Login';
+import Navbar from './shared/components/Navbar/Navbar';
+import Landing from './modules/Landing/Landing';
+import Signup from './modules/auth/SignUp/Signup';
+import Login from './modules/auth/LogIn/Login';
 
 function App() {
   return (
