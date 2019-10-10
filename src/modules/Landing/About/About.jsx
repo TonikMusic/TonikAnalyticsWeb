@@ -1,6 +1,8 @@
 import React from 'react';
 import './About.css';
 
+import { Link } from 'react-router-dom';
+
 import AboutImg from '../../../assets/images/About_Image.jpg';
 
 function About() {
@@ -16,7 +18,9 @@ function About() {
              dui, sagittis viverra turpis a, ultrices congue arcu. Praesent feugiat, metus a
              egestas finibus, risus orci maximus risus, nec tempor quam dolor vel nisl.
              Suspendisse volutpat viverra justo sit amet scelerisque.
-            <span> Learn More</span>
+            <span>
+              <Link to="/soon"> Learn More</Link>
+            </span>
           </p>
         </div>
         <div className="about__column_right">

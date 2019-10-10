@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "axios": "^0.19.0",
+    "fusioncharts": "^3.14.1",
+    "fusionmaps": "^3.14.1",
     "history": "^4.10.1",
     "jwt-decode": "^2.2.0",
     "react": "^16.10.2",

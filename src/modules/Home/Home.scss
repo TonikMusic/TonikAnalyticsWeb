@@ -1,0 +1,62 @@
+@import '../../shared/styles/helper/functions';
+@import '../../shared/styles/helper/mixins';
+@import '../../shared/styles/helper/variables';
+
+.home__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  h1 {
+    padding: 20px;
+    @include secondary--font($size: 2em, $color: $white);
+
+    span {
+      color: $secondaryColor;
+    }
+  }
+
+  img {
+    margin-bottom: 30px;
+    border-radius: 50%;
+    box-shadow: 2px 3px 0 2px $grey;
+  }
+
+  .home__card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    .home__card {
+      background-color: $white;
+      width: 250px;
+      border-radius: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+
+      h3 {
+        @include secondary--font($size: 1em, $color: $grey);
+        padding-left: 20px;
+        padding-top: 20px;
+      }
+
+      .card_two_columns {
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        h1 {
+          @include secondary--font($size: 1.8em, $color: $primaryColor, $weight: bold);
+        }
+      }
+    }
+
+  }
+}
