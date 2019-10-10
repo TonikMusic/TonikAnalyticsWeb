@@ -66,7 +66,7 @@ function signup(user) {
     .then(handleResponse);
 }
 
-export default {
+export default authService = {
   login,
   logout,
   signup,

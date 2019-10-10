@@ -23,7 +23,8 @@ function clear() {
   };
 }
 
-export default {
+// eslint-disable-next-line no-undef
+export default alertActions = {
   success,
   error,
   clear,
